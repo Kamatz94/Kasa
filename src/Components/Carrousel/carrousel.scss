@@ -1,0 +1,71 @@
+@import '../../../style/variables/variables';
+
+.carrouselContainer {
+    height: 415px;
+    margin: 0px 100px;
+    border-radius: 15px;
+    position: relative;
+    &__img {   
+        width: calc(100% - 0px);
+        max-width: 1240px;
+        height: 100%;
+        border-radius: 14px;
+        object-fit: cover;
+    }
+    &__numbertext {
+        width: calc(100% - 0px);
+        max-width: 1240px;
+        position: absolute;
+        text-align: center;
+        top: 90%;
+        color: $colorWhite;
+        font-family: $font-montserrat;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    &__arrow {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        width: calc(100% - 0px);
+        max-width: 1240px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 45%;
+        &--left {
+            padding-left: 20px;
+            cursor: pointer;
+        }
+        &--right {
+            padding-right: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+.carrouselContainer:hover .carrouselContainer__arrow {
+    opacity: 1;
+}
+
+.carrouselContainer:hover .carrouselContainer__numbertext {
+    opacity: 1;
+}
+
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 676px) ###############*/
+@media (max-width: 675px) {
+    .carrouselContainer {
+        height: 255px;
+        margin: 0px;
+        &__arrow {
+            &--left {
+                width: 14px;
+                height: 24px;
+            }
+            &--right {
+                width: 14px;
+                height: 24px;
+            }
+        }
+    }
+}

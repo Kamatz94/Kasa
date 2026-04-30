@@ -1,0 +1,13 @@
+.home {
+    max-width: 1440px;
+    margin: auto
+}
+
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 676px) ###############*/
+@media (max-width: 675px) {
+    .home {
+        min-width: 288px;
+        padding: 0px 16px;
+    }
+}

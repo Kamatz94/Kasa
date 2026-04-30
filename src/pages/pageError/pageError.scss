@@ -1,0 +1,50 @@
+@import '../../../style/variables/variables';
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 658px;
+    &__title {
+        color: $colorRed;
+        font-size: 288px;
+        font-family: $font-montserrat;
+        margin: 0px;
+    }
+    &__text {
+        width: 72%;
+        text-align: center;
+        font-size: 36px;
+        font-family: $font-montserrat;
+        color: $colorRed;
+        margin: 46px 0px 92px 0px;
+    }
+    &__lien {
+        font-family: $font-montserrat;
+        color: #000000;
+        margin-bottom: 0px;
+    }
+}
+
+
+
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 676px) ###############*/
+@media (max-width: 675px) {
+    .container {
+        height: 572px;
+        &__title {
+            font-size: 96px;
+            margin-top: 106;
+        }
+        &__text {
+            font-size: 18px;
+            padding: 60px 0px;
+        }
+        &__lien {
+            font-size: 14px;
+        }
+    }
+}

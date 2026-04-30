@@ -1,0 +1,52 @@
+@import '../../../style/variables/variables';
+
+.banniereGroup {
+    max-width: 1240px;
+    height: 223px;
+    margin: 0px 100px;
+    border-radius: 15px;
+    background-color: $colorBlack;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__img {
+        max-width: 1240px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 14px;
+        opacity: 0.5;
+        position: absolute;
+    }
+    &__text {
+        font-size: 48px;
+        font-weight: 700;
+        position: absolute;
+        color: $colorWhite;
+        font-family: $font-montserrat;
+        padding: 0px 20px;
+    }
+}
+
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 676px) ###############*/
+@media (max-width: 675px) {
+    .banniereGroup {
+        height: 111px;
+        min-width: 288px;
+        margin: 0px 0px;
+        width: 100%;
+        justify-content: start;
+        &__img {
+            height: 100%;
+            min-width: 288px;   
+            width: 100%; 
+        }
+        &__text {
+            width: 225px;
+            font-size: 24px;
+            padding-left: 16px;
+        }
+    }
+}

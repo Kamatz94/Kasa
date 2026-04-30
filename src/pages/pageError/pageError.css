@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 658px;
+}
+.container__title {
+  color: #FF6060;
+  font-size: 288px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+.container__text {
+  width: 72%;
+  text-align: center;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  color: #FF6060;
+  margin: 46px 0px 92px 0px;
+}
+.container__lien {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  margin-bottom: 0px;
+}
+
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 676px) ###############*/
+@media (max-width: 675px) {
+  .container {
+    height: 572px;
+  }
+  .container__title {
+    font-size: 96px;
+    margin-top: 106;
+  }
+  .container__text {
+    font-size: 18px;
+    padding: 60px 0px;
+  }
+  .container__lien {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=pageError.css.map */

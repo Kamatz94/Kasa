@@ -1,0 +1,43 @@
+@import '../../../style/variables/variables';
+
+.keywords-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+    &__keyword {
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        background-color: $colorRed;
+        min-width: 115px;
+        height: 25px;
+        &--text {
+            font-size: 14px;
+            font-weight: 700;
+            font-family: $font-montserrat;
+            color: $colorWhite;
+            margin: 0px;
+            padding: 0px 5px;
+        }
+    }    
+}
+
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 676px) ###############*/
+@media (max-width: 675px) {
+    .keywords-container {
+        
+        &__keyword {
+            min-width: 84px;
+            height: 18px;
+            border-radius: 5px;
+            &--text {
+                font-size: 10px;
+                font-weight:500;
+            }
+        }    
+    }
+}

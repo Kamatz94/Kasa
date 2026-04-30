@@ -1,0 +1,34 @@
+.about {
+    max-width: 1440px;
+    margin: auto
+}
+
+.dropdownContainer {
+    margin: 45px 208.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 1025px) ###############*/
+@media (max-width: 1024px) {
+    .dropdownContainer {
+        max-width: 1240px;
+        margin: 45px 100px;
+    }
+}
+
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 676px) ###############*/
+@media (max-width: 675px) {
+    .about {
+        min-width: 288px;
+        padding: 0px 16px;
+    }
+
+    .dropdownContainer {
+        margin: 20px 0px;
+        gap: 20px;
+    }
+}

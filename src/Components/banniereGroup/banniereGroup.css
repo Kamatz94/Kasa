@@ -1,0 +1,50 @@
+.banniereGroup {
+  max-width: 1240px;
+  height: 223px;
+  margin: 0px 100px;
+  border-radius: 15px;
+  background-color: #000000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banniereGroup__img {
+  max-width: 1240px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  opacity: 0.5;
+  position: absolute;
+}
+.banniereGroup__text {
+  font-size: 48px;
+  font-weight: 700;
+  position: absolute;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 20px;
+}
+
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 676px) ###############*/
+@media (max-width: 675px) {
+  .banniereGroup {
+    height: 111px;
+    min-width: 288px;
+    margin: 0px 0px;
+    width: 100%;
+    justify-content: start;
+  }
+  .banniereGroup__img {
+    height: 100%;
+    min-width: 288px;
+    width: 100%;
+  }
+  .banniereGroup__text {
+    width: 225px;
+    font-size: 24px;
+    padding-left: 16px;
+  }
+}/*# sourceMappingURL=banniereGroup.css.map */

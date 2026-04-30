@@ -1,0 +1,38 @@
+.keywords-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.keywords-container__keyword {
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF6060;
+  min-width: 115px;
+  height: 25px;
+}
+.keywords-container__keyword--text {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  margin: 0px;
+  padding: 0px 5px;
+}
+
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 676px) ###############*/
+@media (max-width: 675px) {
+  .keywords-container__keyword {
+    min-width: 84px;
+    height: 18px;
+    border-radius: 5px;
+  }
+  .keywords-container__keyword--text {
+    font-size: 10px;
+    font-weight: 500;
+  }
+}/*# sourceMappingURL=keywords.css.map */

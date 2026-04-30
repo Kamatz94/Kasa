@@ -1,0 +1,142 @@
+.listing {
+  max-width: 1440px;
+  margin: auto;
+  padding-bottom: 55px;
+}
+
+.containerSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleContainer {
+  width: 100%;
+  margin: 0px 0px 0px 100px;
+  padding-right: 20px;
+}
+.titleContainer__title {
+  max-width: 1240px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #FF6060;
+  margin: 30px 0px 0px 0px;
+}
+.titleContainer__location {
+  max-width: 1240px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 10px 0px 18px 0px;
+}
+.titleContainer__keywords {
+  max-width: 1240px;
+  width: 100%;
+}
+
+.hoteContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 100px 14px 0px;
+}
+.hoteContainer__name {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #FF6060;
+  text-align: end;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+.hoteContainer__photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+}
+
+.noteContainer {
+  height: 24px;
+  margin: 0px 100px 18px 0px;
+  display: flex;
+  gap: 15px;
+}
+.noteContainer__stars {
+  width: 24px;
+  height: 24px;
+}
+
+.containerDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6%;
+  margin: 0px 100px;
+}
+
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 1024px) ###############*/
+@media (max-width: 1023px) {
+  .containerDescription {
+    flex-direction: column;
+    gap: 18px;
+    margin: 0px 100px;
+  }
+}
+/*############################# Media queries ##########################*/
+/*#############  Small devices (phones, less than 676px) ###############*/
+@media (max-width: 675px) {
+  .containerSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .listingDetails {
+    min-width: 288px;
+    padding: 0px 16px 16px 16px;
+  }
+  .titleContainer {
+    margin: 15px 0px 0px 0px;
+  }
+  .titleContainer__title {
+    width: 100%;
+    font-size: 18px;
+    margin: 15px 0px 0px 0px;
+  }
+  .titleContainer__location {
+    width: 100%;
+    font-size: 14px;
+  }
+  .titleContainer__keywords {
+    width: 100%;
+  }
+  .hoteAndNoteContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .hoteContainer {
+    margin: 0px 0px 18px 0px;
+    justify-content: end;
+  }
+  .hoteContainer__name {
+    width: 45%;
+    font-size: 12px;
+    margin: 0px;
+  }
+  .hoteContainer__photo {
+    width: 32px;
+    height: 32px;
+  }
+  .noteContainer {
+    height: 18px;
+    margin: 8px 0px 0px 0px;
+    gap: 5px;
+  }
+  .noteContainer__stars {
+    width: 18px;
+    height: 18px;
+  }
+  .containerDescription {
+    flex-direction: column;
+    margin: 0px;
+  }
+}/*# sourceMappingURL=listingDetails.css.map */
