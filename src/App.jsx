@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 import PageError from './pages/pageError/PageError'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
-
+import Listing from './pages/listing/Listing';
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />
+      },
+      {
+        path: '/listing/:id',
+        element: <Listing />
       },
       {
         path:'*',

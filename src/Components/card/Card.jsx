@@ -4,6 +4,7 @@ import './card.css'
 
 function Card() {
     return (
+        <section className="gallery-frame">
         <section className='card-container'>
             {listingsData.map(listing => (
                 <Link
@@ -15,6 +16,7 @@ function Card() {
                     <h2 className="card__title">{listing.title}</h2>
                 </Link>
             ))}
+        </section>
         </section>
     );
 }
